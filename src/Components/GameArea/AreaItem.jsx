@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import wallImg from '../../img/wall.jpg'
 import animalImg from '../../img/animal.png'
-import { useState } from 'react'
+import personImg from '../../img/i.jpg'
 const StyledAreaItem = styled.div`
 
 margin:2px;
@@ -24,6 +24,9 @@ const AreaItem = ({ type }) => {
     }
     if (type === 'null') {
         typeImg = '';
+    }
+    if (type === 'person') {
+        typeImg = `url(${personImg})`
     }
 
     return (
